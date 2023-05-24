@@ -85,7 +85,7 @@ Public Class FormUser
     End Sub
     Sub tampilnugget()
         GVnugget.Rows.Clear()
-        Dim query As String = "Select * From tbproduk WHERE jenis LIKE 'sosis' AND nama LIKE '%" & cari & "%'"
+        Dim query As String = "Select * From tbproduk WHERE jenis LIKE 'nugget' AND nama LIKE '%" & cari & "%'"
         CMD = New MySqlCommand(query, CONN)
         RD = CMD.ExecuteReader()
 
